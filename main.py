@@ -7,7 +7,6 @@ example = ExamplePublisher(
 	)
 connection_thread = threading.Thread(target=example.connect_to_server(),args=())
 connection_thread.start()
-time.sleep(5)
 
 
 example.message_func("msg1")
